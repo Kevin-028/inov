@@ -1,0 +1,84 @@
+#home {
+    #testemunho {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        min-height: 491px;
+        background: conic-gradient(from 180deg at 50% 50%, #282828 0deg, #4F4C4C 69.37deg, #474747 91.88deg, #282828 360deg);
+        .titulo{
+            margin-bottom: 50px;
+            text-align: center;
+            h1{
+                color: #fff;
+                .destaque{
+                    color: #F64444;
+                }
+            }
+
+        }
+        .tamanho-testemunho {
+            display: grid;
+            place-items: center;
+            .carousel-testemunho {
+                width: 100%;
+                max-width: 500px;
+
+                display: flex;
+                flex-direction: row;
+                .card-carousel {
+                    display: grid;
+                    grid-template-columns: 15px 1fr 2fr 15px;
+                    grid-template-rows: 30px 40px 40px 30px;
+                    grid-template-areas:
+                        "seta-esquerda img star      seta-direita"
+                        "seta-esquerda img titulo    seta-direita"
+                        "seta-esquerda img subtitulo seta-direita"
+                        "seta-esquerda img avaliacao seta-direita"
+                    ;
+                    column-gap: 15px;
+                    align-items: center;
+
+                    background-color: #fff;
+                    border-radius: 10px;
+                    width: 473px;
+                    padding: 15px;
+                    margin: 10px;
+                    .foto-cliente {
+                        grid-area: img;
+                        width: 100%;
+                    }
+                    .star {
+                        grid-area: star;
+                    }
+                    .titulo-carousel {
+                        grid-area: titulo;
+                        font-weight: 900;
+                        font-size: 2.5rem;
+                        color: rgba(0, 0, 0, 0.8);
+                    }
+                    .subtitulo {
+                        grid-area: subtitulo;
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                        color: rgba(0, 0, 0, 0.5);
+                    }
+                    .avaliacao {
+                        grid-area: avaliacao;
+                        font-weight: 300;
+                        font-size: 1.125rem;
+                        color: rgba(0, 0, 0, 0.8);
+                    }
+                    .seta-direita {
+                        grid-area: seta-direita;
+                        justify-self: end;
+                    }
+                    .seta-esquerda {
+                        grid-area: seta-esquerda;
+                    }
+                }
+            }
+        }
+    }
+}

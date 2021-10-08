@@ -1,0 +1,40 @@
+#slide{
+
+    padding: 2% 0;
+
+    color: #3C4758;
+
+    .titulo{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .containerSlide{
+
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    
+    }
+}
+
+.swiper {
+    margin: 0 !important;
+
+    width: 90%;
+    height: auto;
+
+    .swiper-slide {
+        width: 26%;
+
+        max-width: 350px;
+        min-width: 310px;
+        
+        min-height: 250px;
+
+        img {
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+}

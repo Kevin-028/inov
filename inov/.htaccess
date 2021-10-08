@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule !.*\.html$ %{REQUEST_FILENAME}.html [QSA,L]
+</IfModule>

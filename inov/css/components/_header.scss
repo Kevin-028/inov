@@ -1,0 +1,108 @@
+header {
+    position: fixed;
+    background-color:  transparent;
+    width: 100%;
+    z-index: 999999;
+
+    .tamanho {
+        padding: 25px 0;
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1230px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        nav.desktop {
+            padding-right: 15px;
+            height: auto;
+
+            span {
+                padding: 8px 15px;
+                font-size: 1.5rem;
+                font-weight: normal;
+
+                a {
+                    padding: 4px 10px;
+                }
+            }
+
+            .ativado {
+                background-color: #fff;
+                border-radius: 50px;
+
+                a {
+                    color: #000;
+                    font-weight: 800;
+                }
+            }
+
+            span+span {
+                margin-left: 20px;
+            }
+        }
+        nav.mobile {
+            display: none;
+            width: 100%;
+            max-width: 150px;
+            z-index: 10;
+            .nav-conteudo-mobile {
+                transform:translateX(101%); /* Se inicia assim que que fique fora da base visual e a animação acontecer */
+                animation:  menu-mobile 1s ease-in forwards;
+
+                position: absolute;
+                width: 60vw;
+                max-width: 200px;
+                height: 100vh;
+                right: 0;
+                top: 0;
+
+                background-color: #3c4758ef;
+
+                >div{
+                    margin: 25px;
+                    display: flex;
+                    flex-direction: column;
+                }
+                span {
+                    padding: 5px;
+                    width: 100%;
+
+                }
+                #menu-chose{
+                    margin-bottom: 1rem;
+                }
+                
+            }
+            /* estaou configurando as classes para add ou remover a animação */
+            .entrada{
+                animation:  menu-mobile-entrada .7s ease-in forwards;
+            }
+            .saida{
+                animation:  menu-mobile-saida .7s ease-in forwards;
+            }
+
+            .show-menu {
+                display: flex;
+                transition: 0.3s;
+            }
+
+            img {
+                margin: 0 auto;
+                border-radius: 0;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.ativo {
+    background-color: #282828;
+    transition: 1s;
+
+}
+
+.transparente {
+    background-color: #ffffff00;
+    transition: .8s;
+}

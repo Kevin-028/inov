@@ -1,0 +1,33 @@
+@keyframes menu-mobile-entrada {
+    from {
+        transform: translateX(101%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes menu-mobile-saida {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(101%);
+    }
+}
+
+
+
+.js-scroll{
+    opacity: 0;
+    transform: translate3d(-50px, 0, 0);
+    transition: 0.4s;
+
+    &.js-ativo{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+
+    }
+}
