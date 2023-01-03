@@ -28,14 +28,14 @@ if($qntcelular<11){
 
 }
 // Dados do SMTP do cliente
-    $smtp_nome_servidor = 'smtp.office365.com';
-    $smtp_porta = '587';
-    $smtp_email = '3point03@3point.ws'; //email do provedor de hospedagem
-    $smtp_senha = 'Kevin028791';
-    $smtp_seguranca = 'tls';
+    $smtp_nome_servidor = '';
+    $smtp_porta = '';
+    $smtp_email = ''; //email do provedor de hospedagem
+    $smtp_senha = '';
+    $smtp_seguranca = '';
 
     $email_de = $smtp_email; //nome do remetente
-    $email_para = '3point03@3point.ws'; //para quem deve ser enviado
+    $email_para = ''; //para quem deve ser enviado
 
     $email_assunto = $assunto;
 // fim dos dados do SMTP do cliente
