@@ -1,8 +1,5 @@
 <?php
-$servername = "mysql.3point.ws";
-$username = "3point01";
-$password = "3Point2020";
-$dbname = "3point01";
+
   // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
